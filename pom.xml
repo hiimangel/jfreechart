@@ -83,11 +83,114 @@
     <build>
         <testSourceDirectory>src/test/java</testSourceDirectory>
         <plugins>
+
+            <plugin>
+                <groupId>org.pitest</groupId>
+                <artifactId>pitest-maven</artifactId>
+                <version>1.18.2</version>
+                <dependencies>
+                <dependency>
+                <groupId>org.pitest</groupId>
+                <artifactId>pitest-junit5-plugin</artifactId>
+                <version>1.2.2</version>
+                </dependency>
+                </dependencies>
+                <configuration>
+                <!-- Target the production classes (all classes in org.jfree) -->
+                <targetClasses>
+             
+              
+                <param>org.jfree.data.DataUtils</param>
+                <param>org.jfree.data.DefaultKeyedValues2D</param>
+                <param>org.jfree.data.DefaultKeyedValue</param>
+                <param>org.jfree.data.DefaultKeyedValues</param>
+                <param>org.jfree.data.Range</param>
+                <param>org.jfree.data.DomainOrder</param>
+                <param>org.jfree.data.keyToGroupMap</param>
+                <param>org.jfree.data.ComparableObjectItem</param>
+                <param>org.jfree.data.ComparableObjectSeries</param>
+
+
+                <param>org.jfree.chart.StandardChartTheme</param>
+                <param>org.jfree.chart.JFreeChart</param>
+                <param>org.jfree.chart.ChartFactory</param>
+
+
+
+                </targetClasses>
+                <!-- Target only test classes, e.g. those ending with Test -->
+                <targetTests>
+            
+               
+                <param>org.jfree.data.DefaultKeyedValues2DTest</param>
+                <param>org.jfree.data.DefaultKeyedValueTest</param>
+                <param>org.jfree.data.DefaultKeyedValuesTests</param>
+                <param>org.jfree.data.DataUtilsTest</param>
+                <param>org.jfree.data.RangeTest</param>
+                <param>org.jfree.data.DomainOrderTest</param>
+                <param>org.jfree.data.keyToGroupMapTest</param>
+                <param>org.jfree.data.ComparableObjectItemTest</param>
+                <param>org.jfree.data.ComparableObjectSeriesTest</param>
+                <param>org.jfree.data.RangeTypeTest</param>
+                <param>org.jfree.data.KeyedObjects2DTest</param>
+                <param>org.jfree.data.KeyedObjectsTest</param>
+                <param>org.jfree.data.KeyedObjectTest</param>
+
+
+                <param>org.jfree.chart.StandardChartThemeTest</param>
+                <param>org.jfree.chart.JFreeChartTest</param>
+                <param>org.jfree.chart.AreaChartTest</param>
+                <param>org.jfree.chart.BarChartTest</param>
+                <param>org.jfree.chart.ChartRenderingInfoTest</param>
+                <param>org.jfree.chart.GanttChartTest</param>
+                <param>org.jfree.chart.LegendItemCollectionTest</param>
+                <param>org.jfree.chart.LegendItemTest</param>
+                <param>org.jfree.chart.LineChartTest</param>
+                <param>org.jfree.chart.MeterChartTest</param>
+                <param>org.jfree.chart.PieChartTest</param>
+                <param>org.jfree.chart.ScatterPlotTest</param>
+                <param>org.jfree.chart.StackedBarChartTest</param>
+                <param>org.jfree.chart.TestUtils</param>
+                <param>org.jfree.chart.TimeSeriesChartTest</param>
+                <param>org.jfree.chart.WaterfallChartTest</param>
+                <param>org.jfree.chart.XYAreaChartTest</param>
+                <param>org.jfree.chart.XYBarChartTest</param>
+                <param>org.jfree.chart.XYLineChartTest</param>
+                <param>org.jfree.chart.XYStepAreaChartTest</param>
+                <param>org.jfree.chart.XYStepChartTest</param>
+                
+       
+                
+
+                </targetTests>
+                <!-- Explicitly instruct PIT to use JUnit 5 -->
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-clean-plugin</artifactId>
                 <version>3.2.0</version>
             </plugin>            
+
+<plugin>
+    <groupId>org.jacoco</groupId>
+    <artifactId>jacoco-maven-plugin</artifactId>
+    <version>0.8.12</version>
+    <executions>
+        <execution>
+            <goals>
+                <goal>prepare-agent</goal>
+            </goals>
+        </execution>
+        <execution>
+            <id>report</id>
+            <phase>prepare-package</phase>
+            <goals>
+                <goal>report</goal>
+            </goals>
+        </execution>
+    </executions>
+</plugin>
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
