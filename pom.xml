@@ -99,21 +99,49 @@
                 <!-- Target the production classes (all classes in org.jfree) -->
                 <targetClasses>
              
-              
-                <param>org.jfree.data.DataUtils</param>
-                <param>org.jfree.data.DefaultKeyedValues2D</param>
-                <param>org.jfree.data.DefaultKeyedValue</param>
-                <param>org.jfree.data.DefaultKeyedValues</param>
-                <param>org.jfree.data.Range</param>
-                <param>org.jfree.data.DomainOrder</param>
-                <param>org.jfree.data.keyToGroupMap</param>
-                <param>org.jfree.data.ComparableObjectItem</param>
-                <param>org.jfree.data.ComparableObjectSeries</param>
 
 
-                <param>org.jfree.chart.StandardChartTheme</param>
-                <param>org.jfree.chart.JFreeChart</param>
-                <param>org.jfree.chart.ChartFactory</param>
+
+                <param>org.jfree.chart.plot.CategoryCrosshairState</param> 
+                <param>org.jfree.chart.plot.CategoryMarker</param> 
+                <param>org.jfree.chart.plot.CategoryPlot</param> 
+                <param>org.jfree.chart.plot.CenterTextMode</param> 
+                <param>org.jfree.chart.plot.CombinedDomainCategoryPlot</param> 
+                <param>org.jfree.chart.plot.CombinedDomainXYPlot</param> 
+                <param>org.jfree.chart.plot.CombinedRangeCategoryPlot</param> 
+                <param>org.jfree.chart.plot.CombinedRangeXYPlot</param> 
+                <param>org.jfree.chart.plot.Crosshair</param> 
+                <param>org.jfree.chart.plot.CrosshairState</param> 
+                <param>org.jfree.chart.plot.DatasetRenderingOrder</param> 
+                <param>org.jfree.chart.plot.DefaultDrawingSupplier</param>
+                <param>org.jfree.chart.plot.DialShape</param> 
+                <param>org.jfree.chart.plot.DrawingSupplier</param> 
+                <param>org.jfree.chart.plot.FastScatterPlot</param> 
+                <param>org.jfree.chart.plot.IntervalMarker</param>
+                <param>org.jfree.chart.plot.Marker</param>
+                <param>org.jfree.chart.plot.MeterInterval</param> 
+                <param>org.jfree.chart.plot.MeterPlot</param> 
+                <param>org.jfree.chart.plot.package-info</param> 
+                <param>org.jfree.chart.plot.Pannable</param>
+                <param>org.jfree.chart.plot.Plot</param> 
+                <param>org.jfree.chart.plot.PlotOrientation</param> 
+                <param>org.jfree.chart.plot.PlotRenderingInfo</param>
+                <param>org.jfree.chart.plot.PlotState</param> 
+                <param>org.jfree.chart.plot.PolarAxisLocation</param>
+                <param>org.jfree.chart.plot.PolarPlot</param>
+                <param>org.jfree.chart.plot.RingPlot</param> 
+                <param>org.jfree.chart.plot.SeriesRenderingOrder</param>
+                <param>org.jfree.chart.plot.SpiderWebPlot</param> 
+                <param>org.jfree.chart.plot.ThermometerPlot</param> 
+                <param>org.jfree.chart.plot.ValueAxisPlot</param>
+                <param>org.jfree.chart.plot.ValueMarker</param> 
+                <param>org.jfree.chart.plot.WaferMapPlot</param>
+                <param>org.jfree.chart.plot.XYCrosshairState</param>
+                <param>org.jfree.chart.plot.XYPlot</param> 
+                <param>org.jfree.chart.plot.Zoomable</param>
+
+                
+
 
 
 
@@ -122,45 +150,11 @@
                 <targetTests>
             
                
-                <param>org.jfree.data.DefaultKeyedValues2DTest</param>
-                <param>org.jfree.data.DefaultKeyedValueTest</param>
-                <param>org.jfree.data.DefaultKeyedValuesTests</param>
-                <param>org.jfree.data.DataUtilsTest</param>
-                <param>org.jfree.data.RangeTest</param>
-                <param>org.jfree.data.DomainOrderTest</param>
-                <param>org.jfree.data.keyToGroupMapTest</param>
-                <param>org.jfree.data.ComparableObjectItemTest</param>
-                <param>org.jfree.data.ComparableObjectSeriesTest</param>
-                <param>org.jfree.data.RangeTypeTest</param>
-                <param>org.jfree.data.KeyedObjects2DTest</param>
-                <param>org.jfree.data.KeyedObjectsTest</param>
-                <param>org.jfree.data.KeyedObjectTest</param>
+<param>org.jfree.chart.plot.CategoryMarkerTest</param> <param>org.jfree.chart.plot.CategoryPlotTest</param> <param>org.jfree.chart.plot.CombinedDomainCategoryPlotTest</param> <param>org.jfree.chart.plot.CombinedDomainXYPlotTest</param> <param>org.jfree.chart.plot.CombinedRangeCategoryPlotTest</param> <param>org.jfree.chart.plot.CombinedRangeXYPlotTest</param> <param>org.jfree.chart.plot.CrosshairTest</param> <param>org.jfree.chart.plot.DefaultDrawingSupplierTest</param> <param>org.jfree.chart.plot.FastScatterPlotTest</param> <param>org.jfree.chart.plot.IntervalMarkerTest</param> <param>org.jfree.chart.plot.MarkerTest</param> <param>org.jfree.chart.plot.MeterIntervalTest</param> <param>org.jfree.chart.plot.MeterPlotTest</param> <param>org.jfree.chart.plot.MyPlotChangeListener</param> <param>org.jfree.chart.plot.PlotOrientationTest</param> <param>org.jfree.chart.plot.PlotRenderingInfoTest</param> <param>org.jfree.chart.plot.PlotTest</param> <param>org.jfree.chart.plot.PolarPlotTest</param> <param>org.jfree.chart.plot.RingPlotTest</param> <param>org.jfree.chart.plot.SpiderWebPlotTest</param> <param>org.jfree.chart.plot.ThermometerPlotTest</param> <param>org.jfree.chart.plot.ValueMarkerTest</param> <param>org.jfree.chart.plot.XYPlotTest</param>
+                
 
 
-                <param>org.jfree.chart.StandardChartThemeTest</param>
-                <param>org.jfree.chart.JFreeChartTest</param>
-                <param>org.jfree.chart.AreaChartTest</param>
-                <param>org.jfree.chart.BarChartTest</param>
-                <param>org.jfree.chart.ChartRenderingInfoTest</param>
-                <param>org.jfree.chart.GanttChartTest</param>
-                <param>org.jfree.chart.LegendItemCollectionTest</param>
-                <param>org.jfree.chart.LegendItemTest</param>
-                <param>org.jfree.chart.LineChartTest</param>
-                <param>org.jfree.chart.MeterChartTest</param>
-                <param>org.jfree.chart.PieChartTest</param>
-                <param>org.jfree.chart.ScatterPlotTest</param>
-                <param>org.jfree.chart.StackedBarChartTest</param>
-                <param>org.jfree.chart.TestUtils</param>
-                <param>org.jfree.chart.TimeSeriesChartTest</param>
-                <param>org.jfree.chart.WaterfallChartTest</param>
-                <param>org.jfree.chart.XYAreaChartTest</param>
-                <param>org.jfree.chart.XYBarChartTest</param>
-                <param>org.jfree.chart.XYLineChartTest</param>
-                <param>org.jfree.chart.XYStepAreaChartTest</param>
-                <param>org.jfree.chart.XYStepChartTest</param>
-                
-       
-                
+
 
                 </targetTests>
                 <!-- Explicitly instruct PIT to use JUnit 5 -->
@@ -190,6 +184,20 @@
             </goals>
         </execution>
     </executions>
+</plugin>
+
+<plugin>
+  <groupId>com.github.spotbugs</groupId>
+  <artifactId>spotbugs-maven-plugin</artifactId>
+  <version>4.9.3.0</version>
+  <dependencies>
+    <!-- overwrite dependency on spotbugs if you want to specify the version of spotbugs -->
+    <dependency>
+      <groupId>com.github.spotbugs</groupId>
+      <artifactId>spotbugs</artifactId>
+      <version>4.9.3</version>
+    </dependency>
+  </dependencies>
 </plugin>
 
             <plugin>
